@@ -1,0 +1,116 @@
+2021-09-25 02:14:33.547 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 111
+2021-09-25 02:14:53.379 +03:00 [INF] Request: 1 Response: unknown request
+2021-09-25 02:15:09.774 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wSx1
+2021-09-25 02:15:23.104 +03:00 [INF] Request: request Response: response
+2021-09-25 02:19:16.249 +03:00 [INF] Request: request Response: response
+2021-09-25 02:19:24.097 +03:00 [INF] Request: request 2 Response: response 2
+2021-09-25 02:19:32.356 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wSx1
+2021-09-25 02:20:03.517 +03:00 [INF] Request: request 2 Response: response 2
+2021-09-25 02:33:23.849 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 02:33:34.368 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 02:33:39.340 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: retrh
+2021-09-25 02:33:52.813 +03:00 [INF] Request: erg Response: unknown request
+2021-09-25 02:34:11.779 +03:00 [INF] Request: request Response: response
+2021-09-25 02:44:01.156 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wx
+2021-09-25 02:44:15.630 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wx
+2021-09-25 02:44:45.198 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wX
+2021-09-25 02:44:56.008 +03:00 [INF] Request: 1 Response: 
+2021-09-25 02:45:07.443 +03:00 [INF] Request: 1 Response: 
+2021-09-25 02:45:22.713 +03:00 [INF] Request: response Response: 
+2021-09-25 02:47:06.096 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 02:47:12.202 +03:00 [INF] Request: request 2 Response: WebAPI.Model.RequestResponse
+2021-09-25 02:47:17.140 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 02:47:25.946 +03:00 [INF] Request: reques Response: 
+2021-09-25 02:48:03.656 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wSx1
+2021-09-25 03:05:13.108 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:05:33.814 +03:00 [INF] Request: wedfv Response: 
+2021-09-25 03:08:32.416 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:09:19.915 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:09:56.594 +03:00 [INF] Request: 1 Response: 
+2021-09-25 03:10:05.785 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 03:10:15.678 +03:00 [INF] Request: ReQuEsT Response: WebAPI.Model.RequestResponse
+2021-09-25 03:10:21.640 +03:00 [INF] Request: ReQuEsT 2 Response: WebAPI.Model.RequestResponse
+2021-09-25 03:24:57.889 +03:00 [ERR] An error occurred using the connection to database 'TestDB' on server '(localdb)\mssqllocaldb'.
+2021-09-25 03:25:20.704 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "TestDB" requested by the login. The login failed.
+Login failed for user 'NB\Master'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateTables()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at WebAPI.DAL.DBC..ctor(DbContextOptions options) in E:\VS\Test\WebAPI\DAL\DBC.cs:line 11
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:703e61b4-00ee-4bb7-be0d-cea5d5c66698
+Error Number:4060,State:1,Class:11
+2021-09-25 03:25:21.644 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:25:28.325 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:25:30.638 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:25:55.956 +03:00 [INF] Request: 11 Response: 
+2021-09-25 03:26:02.740 +03:00 [INF] Request: re Response: 
+2021-09-25 03:26:09.553 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 03:26:19.877 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 03:26:22.364 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 03:26:44.768 +03:00 [INF] Request: request Response: WebAPI.Model.RequestResponse
+2021-09-25 03:27:35.458 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wSx1
+2021-09-25 03:39:01.299 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:39:11.722 +03:00 [WRN] Bad parameter(, )
+2021-09-25 03:39:38.304 +03:00 [WRN] Bad parameter(: 0, fsf)
+2021-09-25 03:41:54.009 +03:00 [INF] Request: 0 Response: 1
+2021-09-25 03:44:58.800 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 03:45:21.138 +03:00 [WRN] Bad parameter
+2021-09-25 03:45:35.879 +03:00 [WRN] Bad parameter: 1
+2021-09-25 03:46:06.346 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 1QaZ@wSx1
+2021-09-25 20:12:46.553 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 20:16:18.837 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 20:16:24.686 +03:00 [WRN] Unauthorized request from IP ::1 sended API key: 
+2021-09-25 20:16:38.129 +03:00 [WRN] Bad parameter: qwf
+2021-09-25 20:16:44.498 +03:00 [WRN] Parameter expected
+2021-09-25 20:16:49.642 +03:00 [WRN] Parameter expected
+2021-09-25 20:17:16.102 +03:00 [INF] Request: request Response: response
+2021-09-25 20:17:21.604 +03:00 [INF] Request: request 2 Response: response 2
